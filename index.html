@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <title>Spinny Circles</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <canvas id="main_canvas"> </canvas>
+    <div id="controls">
+      Start layer<br />
+      <div class="control">
+        <input
+          type="range"
+          step="1"
+          min="0"
+          max="50"
+          id="start"
+          data-partner="start_t"
+        />
+        <input
+          type="number"
+          step="1"
+          min="0"
+          max="50"
+          id="start_t"
+          data-partner="start"
+        />
+      </div>
+      End layer<br />
+      <div class="control">
+        <input
+          type="range"
+          step="1"
+          min="1"
+          max="50"
+          id="end"
+          data-partner="end_t"
+        />
+        <input
+          type="number"
+          step="1"
+          min="1"
+          max="50"
+          id="end_t"
+          data-partner="end"
+        />
+      </div>
+      Layer thickness<br />
+      <div class="control">
+        <input
+          type="range"
+          step="1"
+          min="1"
+          max="100"
+          id="thickness"
+          data-partner="thickness_t"
+        />
+        <input
+          type="number"
+          step="1"
+          min="1"
+          max="100"
+          id="thickness_t"
+          data-partner="thickness"
+        />
+      </div>
+      Layer spacing<br />
+      <div class="control">
+        <input
+          type="range"
+          step="1"
+          min="1"
+          max="100"
+          id="spacing"
+          data-partner="spacing_t"
+        />
+        <input
+          type="number"
+          step="1"
+          min="1"
+          max="100"
+          id="spacing_t"
+          data-partner="spacing"
+        />
+      </div>
+      Layer spin speed<br />
+      <div class="control">
+        <input
+          type="range"
+          step="0.01"
+          min="-1"
+          max="1"
+          id="spin"
+          data-partner="spin_t"
+        />
+        <input
+          type="number"
+          step="0.01"
+          min="-1"
+          max="1"
+          id="spin_t"
+          data-partner="spin"
+        />
+      </div>
+      Layer spin power<br />
+      <div class="control">
+        <input
+          type="range"
+          step="0.01"
+          min="-1"
+          max="2"
+          id="power"
+          data-partner="power_t"
+        />
+        <input
+          type="number"
+          step="0.01"
+          min="-1"
+          max="2"
+          id="power_t"
+          data-partner="power"
+        />
+      </div>
+      Layer pattern<br />
+      <div class="control">
+        <input type="text" step="1" min="1" max="100" id="pattern" />
+      </div>
+      <br />
+      <button value="Reset" onclick="Time = 0;">Reset</button>
+    </div>
+  </body>
+
+  <script src="scripts.js"></script>
+</html>
